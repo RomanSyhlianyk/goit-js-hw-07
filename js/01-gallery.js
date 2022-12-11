@@ -34,9 +34,10 @@ function openModalWindow(e) {
   instance.show();
   window.addEventListener("keydown", closeModalWindow);
   function closeModalWindow(e) {
-    if (e.code !== "Escape") {
-      return;
-    }
+    // if (e.code !== "Escape") {
+    //   console.log("kljjhbfjhwbv")
+    //   return;
+    // }
     if (e.code === "Escape" || "click") {
       instance.close();
       window.removeEventListener("keydown", closeModalWindow);
